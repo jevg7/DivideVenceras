@@ -1,0 +1,77 @@
+using System;
+
+class ProgramaSalarios
+{
+    static void Main()
+    {
+        // Definir las constantes
+        const int SALARIO_BASE = 200;
+        const double COMISION = 0.09;
+
+        // Crear un arreglo de contadores para los rangos de salarios
+        int[] rangosSalarios = new int[9]; // índices 0 a 8 representan los rangos de salarios
+
+        // Ingresar las ventas brutas de los vendedores
+        while (true)
+        {
+            Console.Write("Ingrese las ventas brutas del vendedor (o -1 para terminar): ");
+            double ventasBrutas = double.Parse(Console.ReadLine());
+
+            if (ventasBrutas == -1) // Salir del bucle si se ingresa -1
+                break;
+
+            // Calcular el salario semanal
+            int salario = (int)(SALARIO_BASE + (COMISION * ventasBrutas));
+
+            // Determinar el rango en el que cae el salario
+            if (salario >= 1000)
+            {
+                rangosSalarios[8]++; // $1000 o más
+            }
+            else if (salario >= 900)
+            {
+                rangosSalarios[7]++; // $900-$999
+            }
+            else if (salario >= 800)
+            {
+                rangosSalarios[6]++; // $800-$899
+            }
+            else if (salario >= 700)
+            {
+                rangosSalarios[5]++; // $700-$799
+            }
+            else if (salario >= 600)
+            {
+                rangosSalarios[4]++; // $600-$699
+            }
+            else if (salario >= 500)
+            {
+                rangosSalarios[3]++; // $500-$599
+            }
+            else if (salario >= 400)
+            {
+                rangosSalarios[2]++; // $400-$499
+            }
+            else if (salario >= 300)
+            {
+                rangosSalarios[1]++; // $300-$399
+            }
+            else
+            {
+                rangosSalarios[0]++; // $200-$299
+            }
+        }
+
+        // Imprimir el resultado de los rangos de salarios
+        Console.WriteLine("\nNúmero de vendedores en cada rango de salario:");
+        Console.WriteLine($"$200-$299: {rangosSalarios[0]}");
+        Console.WriteLine($"$300-$399: {rangosSalarios[1]}");
+        Console.WriteLine($"$400-$499: {rangosSalarios[2]}");
+        Console.WriteLine($"$500-$599: {rangosSalarios[3]}");
+        Console.WriteLine($"$600-$699: {rangosSalarios[4]}");
+        Console.WriteLine($"$700-$799: {rangosSalarios[5]}");
+        Console.WriteLine($"$800-$899: {rangosSalarios[6]}");
+        Console.WriteLine($"$900-$999: {rangosSalarios[7]}");
+        Console.WriteLine($"$1000 o más: {rangosSalarios[8]}");
+    }
+}
