@@ -65,7 +65,7 @@ namespace bank
                         Console.WriteLine("Opción inválida, por favor intenta de nuevo.");
                         break;
                 }
-            } while (option != 3);  // El bucle continúa hasta que el usuario elija salir.
+            } while (option != 3);  
         }
 
         public static void CreateAccount()
@@ -97,7 +97,7 @@ namespace bank
                 writer.Write(username);
                 writer.Write(password);
                 writer.Write(accountNumber);
-                writer.Write(0m);  // Saldo inicial es 0
+                writer.Write(0m);  
             }
 
             Console.WriteLine("Cuenta creada exitosamente");
@@ -147,6 +147,7 @@ namespace bank
             string tempUsername = Console.ReadLine();
             Console.Write("Ingresa tu contraseña: ");
             string tempPassword = Console.ReadLine();
+            Console.Clear();
 
             bool foundAccount = false;
             foreach (var account in accounts)
@@ -155,7 +156,7 @@ namespace bank
                 {
                     loggedInAccount = account;
                     foundAccount = true;
-                    Console.WriteLine($"Bienvenido, {loggedInAccount.Names} {loggedInAccount.LastNames}");
+                    
                     break;
                 }
             }
@@ -169,6 +170,8 @@ namespace bank
             int tempOpt;
             do
             {
+                Console.WriteLine($"Bienvenido, {loggedInAccount.Names} {loggedInAccount.LastNames}");
+                Console.WriteLine($"Numero de cuenta: {loggedInAccount.AccountNumber}");
                 Console.WriteLine("1. Depósito");
                 Console.WriteLine("2. Retiro");
                 Console.WriteLine("3. Consultar saldo");
@@ -200,13 +203,48 @@ namespace bank
 
         public static void Deposit()
         {
-            Console.WriteLine("Ingresa la cantidad a depositar: ");
-            decimal amount = decimal.Parse(Console.ReadLine());
-            loggedInAccount.Balance += amount;
-            UpdateAccount(loggedInAccount);
-            Console.WriteLine("Depósito exitoso. Presiona cualquier tecla para volver al menú...");
-            Console.ReadKey();
-            Console.Clear();
+            Console.WriteLine("1.Depósito propio");
+            Console.WriteLine("2.Deposito a tercero");
+            Console.Write("Elige una opción: ");
+            int option = int.Parse(Console.ReadLine());
+
+            if (option == 1)
+            {
+                Console.WriteLine("Ingresa la cantidad a depositar: ");
+                decimal amount = decimal.Parse(Console.ReadLine());
+                loggedInAccount.Balance += amount;
+                UpdateAccount(loggedInAccount);
+                Console.WriteLine("Depósito exitoso. Presiona cualquier tecla para volver al menú...");
+                Console.ReadKey();
+                Console.Clear();
+            }
+
+            else if (option == 2)
+            {
+                Console.WriteLine("Ingresa el número de cuenta a la que deseas depositar: ");
+                int accountNumber = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingresa la cantidad a depositar: ");
+                decimal amount = decimal.Parse(Console.ReadLine());
+                bool foundAccount = false;
+                foreach (var account in accounts)
+                {
+                    if (account.AccountNumber == accountNumber)
+                    {
+                        var updatedAccount = account;
+                        updatedAccount.Balance += amount;
+                        UpdateAccount(updatedAccount);
+                        foundAccount = true;
+                        Console.WriteLine("Depósito exitoso. Presiona cualquier tecla para volver al menú...");
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Opción inválida, por favor intenta de nuevo.");
+            }
         }
 
         public static void Withdraw()

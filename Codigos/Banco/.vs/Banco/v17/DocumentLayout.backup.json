@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jairo Vega\\Desktop\\divide_venceras_MyPE\\codigos\\Banco\\",
+  "WorkspaceRootPath": "C:\\Users\\Jairo\\Desktop\\DivideVenceras\\Codigos\\Banco\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A85FD0A-8663-428C-B469-30787184DBCB}|Banco.csproj|c:\\users\\jairo vega\\desktop\\divide_venceras_mype\\codigos\\banco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A85FD0A-8663-428C-B469-30787184DBCB}|Banco.csproj|c:\\users\\jairo\\desktop\\dividevenceras\\codigos\\banco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A85FD0A-8663-428C-B469-30787184DBCB}|Banco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\divide_venceras_MyPE\\codigos\\Banco\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Desktop\\DivideVenceras\\Codigos\\Banco\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\divide_venceras_MyPE\\codigos\\Banco\\Program.cs*",
+              "ToolTip": "C:\\Users\\Jairo\\Desktop\\DivideVenceras\\Codigos\\Banco\\Program.cs*",
               "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAiwBABAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAswLIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T06:24:30.209Z",
               "EditorCaption": ""
