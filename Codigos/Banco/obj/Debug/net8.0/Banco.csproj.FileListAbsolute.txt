@@ -1,0 +1,15 @@
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\bin\Debug\net8.0\Banco.exe
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\bin\Debug\net8.0\Banco.deps.json
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\bin\Debug\net8.0\Banco.runtimeconfig.json
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\bin\Debug\net8.0\Banco.dll
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\bin\Debug\net8.0\Banco.pdb
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.AssemblyInfoInputs.cache
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.AssemblyInfo.cs
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.csproj.CoreCompileInputs.cache
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.sourcelink.json
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.dll
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\refint\Banco.dll
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.pdb
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\Banco.genruntimeconfig.cache
+C:\Users\Jairo Vega\Desktop\divide_venceras_MyPE\codigos\Banco\obj\Debug\net8.0\ref\Banco.dll
