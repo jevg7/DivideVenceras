@@ -1,0 +1,18 @@
+using System;
+
+class Programa
+{
+    static void Main(string[] args)
+    {
+        // Solicita al usuario que ingrese un número
+        Console.Write("Ingrese un número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        // Muestra la sucesión desde 1 hasta el número ingresado
+        Console.WriteLine("La sucesión es:");
+        for (int i = 1; i <= numero; i++)
+        {
+            Console.Write(i + " ");
+        }
+    }
+}
