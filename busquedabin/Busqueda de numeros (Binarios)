@@ -1,0 +1,40 @@
+using System;
+
+class Programa
+{
+    static int BuscarNumero(int[] arreglo, int numero)
+    {
+        int inicio = 0, fin = arreglo.Length - 1;
+        while (inicio <= fin)
+        {
+            int medio = (inicio + fin) / 2;
+            if (arreglo[medio] == numero)
+                return medio;
+            if (arreglo[medio] < numero)
+                inicio = medio + 1;
+            else
+                fin = medio - 1;
+        }
+        return -1;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Ingrese el tamaño del arreglo:");
+        int tamaño = int.Parse(Console.ReadLine());
+
+        int[] datos = new int[tamaño];
+        Console.WriteLine($"Ingrese {tamaño} elementos del arreglo ordenado:");
+
+        for (int i = 0; i < tamaño; i++)
+        {
+            datos[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine("Ingrese el número que desea buscar:");
+        int numero = int.Parse(Console.ReadLine());
+
+        int resultado = BuscarNumero(datos, numero);
+        Console.WriteLine(resultado != -1 ? $"Número encontrado en el índice {resultado}" : "Número no encontrado en el arreglo");
+    }
+}
